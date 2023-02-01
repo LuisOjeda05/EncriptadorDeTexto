@@ -3,30 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1><img id="image-logo" src="images/logo.png"></h1>
+      <h1><img class="image-logo" src="images/logo.png"></h1>
     </header>
 
     <main>
-      <section>
-        <input type="text" placeholder="Ingresar texto">
-      </section>
+      <article class="main-content">
 
-      <article>
-        <button id="button-encriptar">Encriptar</button>
-        <button id="button-desencriptar">Desencriptar</button>
+        <textarea id="input-textoAEncriptar" placeholder="Ingresar Texto"></textarea>
+
+        <section class="section-buttons">
+          <p class="warning-message">
+            <img src="images/exclamation.png">
+            Solo letras minúsculas y sin acentos.
+          </p>
+          <button id="button-encriptar">Encriptar</button>
+          <button class="button-white" id="button-desencriptar">Desencriptar</button>
+        </section>
+
       </article>
 
       <aside>
-        <button id="button-copiar">Copiar</button>
+        <button class="button-white" id="button-copiar">Copiar</button>
       </aside>
     </main>
 
-    <footer>
+    <!--<footer>
       <p id="copyright">&copy Luis Ojeda Orozco - Copyright 2023.</p>
-    </footer>
+    </footer>!-->
   </body>
 </html>

@@ -1,0 +1,72 @@
+body {
+    background: #D8DFE8;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.image-logo {
+    width: 2.3em;
+    margin: 30px 60px;
+}
+
+.main-content {
+    width: 50%;
+    margin: 30px 150px;
+    display: inline-block;
+}
+
+#input-textoAEncriptar {
+    width: 100%;
+    height: 400px;
+    resize: none;
+    font-size: 2em;
+    border: none;
+    outline: none;
+    padding-right: 60px;
+    color: #0A3871;
+    background: #e0e0e0;
+}
+
+#input-textoAEncriptar::placeholder {
+    color: #0A3871;
+}
+
+.section-buttons {
+    
+    padding-top: 30px;
+}
+
+.warning-message {
+    color: #495057;
+    font-size: 17px;
+    padding-bottom: 12px;
+}
+
+#button-encriptar {
+    width: 225px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: #0A3871;
+}
+
+.button-white {
+    width: 225px;
+    height: 50px;
+    color: #0A3871;
+    font-size: 1.2em;
+    border-color: #0A3871;
+    border-radius: 20px;
+    background-color: #D8DFE8;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+aside {
+    width: 20%;
+    float: right;
+   
+  }
+
