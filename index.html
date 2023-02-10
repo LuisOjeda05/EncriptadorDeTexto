@@ -5,38 +5,42 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1><img class="image-logo" src="images/logo.png"></h1>
+      <h1>
+        <a href="index.html"><img class="image-logo" src="images/logo.png"></a>
+      </h1>
     </header>
 
     <main>
-      <article class="main-content">
-
-        <textarea id="input-textoAEncriptar" placeholder="Ingresar Texto"></textarea>
-
-        <section class="section-buttons">
-          <p class="warning-message">
-            <img src="images/exclamation.png">
-            Solo letras minúsculas y sin acentos.
-          </p>
-          <button id="button-encriptar">Encriptar</button>
-          <button class="button-white" id="button-desencriptar">Desencriptar</button>
-        </section>
-
-      </article>
+      <section class="main-content">
+        <textarea id="input-texto" placeholder="Ingresar Texto" onkeypress="return /[0-9a-zA-Z ]/i.test(event.key)"></textarea>
+        <p class="warning-message">
+          <img src="images/exclamation.png">
+          Solo letras minúsculas y sin acentos.
+        </p>
+        <button id="button-encriptar">Encriptar</button>
+        <button class="button-white" id="button-desencriptar">Desencriptar</button>
+      </section>
 
       <aside>
+        <textarea id="inserted-text"></textarea>
+        
+        <div id="div-textoDesencriptadoVacio">
+          <img class="image-textoNoEncontrado" src="images/Muñeco.png">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingrese el texto que desee encriptar o desencriptar</p>
+        </div>
+        
         <button class="button-white" id="button-copiar">Copiar</button>
       </aside>
     </main>
 
-    <!--<footer>
-      <p id="copyright">&copy Luis Ojeda Orozco - Copyright 2023.</p>
-    </footer>!-->
+    <script src="app.js"></script>
   </body>
 </html>
