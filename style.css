@@ -10,51 +10,47 @@ body {
 
 .main-content {
     width: 50%;
-    margin: 30px 150px;
+    margin-top: 15px;
+    margin-left: 150px;
     display: inline-block;
 }
 
-#input-textoAEncriptar {
+#input-texto {
     width: 100%;
-    height: 400px;
+    height: 360px;
     resize: none;
     font-size: 2em;
     border: none;
     outline: none;
-    padding-right: 60px;
     color: #0A3871;
-    background: #e0e0e0;
+    background: #D8DFE8;
 }
 
-#input-textoAEncriptar::placeholder {
+#input-texto::placeholder {
     color: #0A3871;
-}
-
-.section-buttons {
-    
-    padding-top: 30px;
 }
 
 .warning-message {
     color: #495057;
-    font-size: 17px;
-    padding-bottom: 12px;
+    font-size: 1em;
+    margin: 12px 0;
 }
 
 #button-encriptar {
-    width: 225px;
-    height: 50px;
+    width: 17em;
+    height: 75px;
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 20px;
+    margin-right: 9%;
     background-color: #0A3871;
 }
 
 .button-white {
-    width: 225px;
-    height: 50px;
+    width: 17em;
+    height: 75px;
     color: #0A3871;
-    font-size: 1.2em;
+    font-size: 1em;
     border-color: #0A3871;
     border-radius: 20px;
     background-color: #D8DFE8;
@@ -65,8 +61,108 @@ button:hover {
 }
 
 aside {
-    width: 20%;
-    float: right;
-   
-  }
+    width:25%;
+    height: 80%;
+    top: 10%;
+    bottom: 50%;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 150px;
+    border-radius: 40px;
+    background: #ffffff;
+}
 
+.image-textoNoEncontrado {
+    width: 275px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin: 12px 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#inserted-text {
+    display: none;
+    width: 100%;
+    height: 80%;
+    margin: 12px 12px;
+    resize: none;
+    border: none;
+    outline: none;
+    align-self: flex-start;
+    font-size: 1.5em;
+    color: #495057;
+    text-align: start;
+}
+
+#button-copiar {
+    display: none;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1280px) {
+    #input-texto {
+        height: 465px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #input-texto {
+        height: 330px;
+    }
+
+    .main-content {
+        width: 100%;
+        display: block;
+        margin: 0 12px;
+    }
+
+    aside {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        margin: 50px 0px;
+    }
+    
+    #inserted-text {
+        height: 70%;
+    }
+}
+
+@media screen and (max-height: 915px) {  
+    #input-texto {
+        height: 600px;
+    }
+
+    #div-textoDesencriptadoVacio {
+        margin-left: 12px;
+    }
+
+}
+
+@media screen and (max-height: 896px) {  
+    #input-texto {
+        height: 550px;
+    }
+}
+
+@media screen and (max-height: 740px) {  
+    #input-texto {
+        height: 400px;
+    }
+}
+
+@media screen and (max-height: 667px) {  
+    #input-texto {
+        height: 350px;
+    }
+}
